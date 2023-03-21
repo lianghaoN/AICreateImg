@@ -1,19 +1,50 @@
 .main{
+    background-color: #f6f8fa;
+    min-height: 100vh;
 }
 .content{
     display: flex;
     margin: 0 auto;
     width: 70vw;
     flex-direction: column;
+    background-color: #ffffff;
+    padding: 10px 30px 30px;
 }
 .headerTitle{
     color: #333333;
     font-weight: bold;
     font-size: 30px;
+    margin-left: -10px;
 }
 .tagContainer{
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
+}
+.navContainer{
+    display: flex;
+    align-items: center;
+}
+.navLabel{
+    margin-right: 10px;
+}
+.navItem{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.antSwitch{
+    cursor: url(https://www.wikimoe.com/content/templates/black_memory%20v1.1/images/web_cursor_link.cur),auto!important;
+}
+.activeTags{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 50%;
+    min-height: 200px;
+    background: rgb(240, 242, 245);
+    border-radius: 20px;
 }
 .tagController{
     display: flex;

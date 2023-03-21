@@ -1,9 +1,11 @@
 import React, {useCallback, useState} from 'react';
 import './App.css';
-import {  Space,Switch } from 'antd';
+import { Switch, Tag, Space } from 'antd';
 
 function App() {
     const [nav,setNav] = useState<string[]>([]);
+    const [activeTag, setActiveTag] = useState<{value:string,label:string}[]>([]);
+    console.log(setActiveTag);
 
     const navItem = [
         {
@@ -17,11 +19,8 @@ function App() {
     ]
 
     const navChange = useCallback((checked:boolean,value:string)=>{
-        if(checked){
-            setNav([...nav,value])
-        }else{
-            nav.filter((item => item !== value))
-        }
+        if(checked) setNav([...nav,value]);
+        else setNav(nav.filter((item => item !== value)));
     },[nav])
 
     console.log(nav,'nav')
@@ -31,14 +30,21 @@ function App() {
             <header className="headerTitle">AI头像生成器 V1.0</header>
             <section>
                 <article className="tagContainer">
-                    <Space>
+                    <nav className="navContainer">
                         {navItem.map(item=>(
-                            <Space key={item.value} className="navItem">
-                                <Switch onChange={(checked)=>navChange(checked,item.value)} />
-                                {item.label}
-                            </Space>
+                            <div key={item.value} className="navItem">
+                                <div className="navLabel">{item.label}:</div>
+                                <Switch onChange={(checked)=>navChange(checked,item.value)} className={"antSwitch"} />
+                            </div>
                         ))}
-                    </Space>
+                    </nav>
+                    <div className="activeTags">
+                        <Space size={[0, 8]} wrap>
+                            {activeTag?.map(item=>(
+                              <Tag color="volcano" key={item.value}>{item.value}</Tag>
+                            ))}
+                        </Space>
+                    </div>
                 </article>
                 <article className="imgContainer" />
             </section>
