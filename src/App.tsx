@@ -1,24 +1,48 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useCallback, useState} from 'react';
 import './App.css';
+import {  Space,Switch } from 'antd';
 
 function App() {
+    const [nav,setNav] = useState<string[]>([]);
+
+    const navItem = [
+        {
+            value:'add',
+            label:'增加权重'
+        },
+        {
+            value:'reduce',
+            label:'降低权重'
+        },
+    ]
+
+    const navChange = useCallback((checked:boolean,value:string)=>{
+        if(checked){
+            setNav([...nav,value])
+        }else{
+            nav.filter((item => item !== value))
+        }
+    },[nav])
+
+    console.log(nav,'nav')
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+        <div className="content">
+            <header className="headerTitle">AI头像生成器 V1.0</header>
+            <section>
+                <article className="tagContainer">
+                    <Space>
+                        {navItem.map(item=>(
+                            <Space key={item.value} className="navItem">
+                                <Switch onChange={(checked)=>navChange(checked,item.value)} />
+                                {item.label}
+                            </Space>
+                        ))}
+                    </Space>
+                </article>
+                <article className="imgContainer" />
+            </section>
+        </div>
     </div>
   );
 }
