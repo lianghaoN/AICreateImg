@@ -1,6 +1,7 @@
 import React, { useCallback, useState } from 'react';
 import './App.css';
-import { Switch, Tag, Space } from 'antd';
+import { Switch, Tag, Space, Button } from 'antd';
+import { AreaChartOutlined } from '@ant-design/icons';
 
 function App() {
   const [nav, setNav] = useState<string[]>([]);
@@ -45,18 +46,28 @@ function App() {
                   />
                 </div>
               ))}
+              <Button
+                type="primary"
+                style={{ marginLeft: 'auto' }}
+                icon={<AreaChartOutlined />}
+              >
+                一键生成
+              </Button>
             </nav>
-            <div className="activeTags">
-              <Space size={[0, 8]} wrap>
-                {activeTag?.map((item) => (
-                  <Tag color="volcano" key={item.value}>
-                    {item.value}
-                  </Tag>
-                ))}
-              </Space>
+            <div className="container">
+              <div className="activeTags">
+                <Space size={[0, 8]} wrap>
+                  {activeTag?.map((item) => (
+                    <Tag color="volcano" key={item.value}>
+                      {item.value}
+                    </Tag>
+                  ))}
+                </Space>
+              </div>
+              <div className="imgContainer" />
             </div>
           </article>
-          <article className="imgContainer" />
+          <article />
         </section>
       </div>
     </div>

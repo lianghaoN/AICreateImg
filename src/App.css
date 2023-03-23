@@ -36,6 +36,11 @@
 .antSwitch{
     cursor: url(https://www.wikimoe.com/content/templates/black_memory%20v1.1/images/web_cursor_link.cur),auto!important;
 }
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 .activeTags{
     margin-top: 20px;
     display: flex;
@@ -49,8 +54,11 @@
 .tagController{
     display: flex;
     align-items: center;
-
 }
 .imgContainer{
-
+    margin-top: 20px;
+    background: rgb(240, 242, 245);
+    height: 240px;
+    border-radius: 20px;
+    width: 240px;
 }
