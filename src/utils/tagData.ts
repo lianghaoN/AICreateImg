@@ -868,160 +868,166 @@ export const tagData = [
           { value: 'bowtie', label: '蝴蝶结' },
           { value: 'hair_bow', label: '蝴蝶结发饰' },
           { value: 'maid_headdress', label: '女仆头饰' },
+          { value: 'bow', label: '服装饰品/头部饰品' },
+          { value: 'hair ornament', label: '发饰' },
+          { value: 'heart hair ornament', label: '心形' },
+          { value: 'bandaid hair ornament', label: '创可贴' },
+          { value: 'hair bun', label: '发包' },
+          { value: 'cone hair bun', label: '锥形发髻' },
+          { value: 'double bun', label: '双发髻' },
+          { value: 'semi-rimless eyewear', label: '半无框的眼镜' },
+          { value: 'sunglasses', label: '太阳镜' },
+          { value: 'goggles', label: '风镜' },
+          { value: 'eyepatch', label: '眼罩(独眼)' },
+          { value: 'black blindfold', label: '黑色眼罩' },
+          { value: 'headphones', label: '耳机' },
+          { value: 'veil', label: '面纱' },
+          { value: 'mouth mask', label: '口罩' },
+          { value: 'glasses', label: '眼镜' },
+          { value: 'earrings', label: '耳环' },
+          { value: 'jewelry', label: '首饰' },
+          { value: 'bell', label: '铃铛' },
+          { value: 'ribbon_choker', label: '颈带' },
+          { value: 'black choker', label: '颈部饰品' },
+          { value: 'necklace', label: '项链' },
+          { value: 'headphones around neck', label: '耳机套脖子上' },
+          { value: 'collar', label: '项圈' },
+          { value: 'sailor_collar', label: '水手领' },
+          { value: 'neckerchief', label: '领巾' },
+          { value: 'necktie', label: '领带' },
+          { value: 'cross necklace', label: '十字架' },
+          { value: 'pendant', label: '吊坠' },
+          { value: 'jewelry', label: '珠宝' },
+          { value: 'scarf', label: '围巾' },
+          { value: 'armband', label: '臂章' },
+          { value: 'armlet', label: '臂环' },
+          { value: 'arm strap', label: '臂带' },
+          { value: 'elbow gloves', label: '肘部手套' },
+          { value: 'half gloves', label: '露指手套' },
+          { value: 'fingerless_gloves', label: '手镯' },
+          { value: 'gloves', label: '手套' },
+          { value: 'fingerless gloves', label: '五指手套' },
+          { value: 'chains', label: '锁链' },
+          { value: 'shackles', label: '手链' },
+          { value: 'cuffs', label: '手铐' },
+          { value: 'handcuffs', label: '手铐' },
+          { value: 'bracelet', label: '手镯' },
+          { value: 'wristwatch', label: '手表' },
+          { value: 'wristband', label: '腕带' },
+          { value: 'wrist_cuffs', label: '腕饰' },
+          { value: 'holding book', label: '拿着书' },
+          { value: 'holding sword', label: '拿着剑' },
+          { value: 'tennis racket', label: '球拍' },
+          { value: 'cane', label: '手杖' },
+          { value: 'backpack', label: '双肩包' },
+          { value: 'school bag', label: '书包' },
+          { value: 'satchel', label: '肩背书包' },
+          { value: 'smartphone', label: '手机' },
+          { value: 'bandaid', label: '创可贴' },
+        ],
+      },
+    ],
+  },
+  {
+    classify: '动作',
+    tags: [
+      {
+        classify: '动作',
+        tags: [
+          { value: 'head tilt', label: '歪头' },
+          { value: 'turning around', label: 'turning around回头' },
+          { value: 'looking back', label: 'looking back回头' },
+          { value: 'looking down', label: '向下看' },
+          { value: 'looking up', label: '向上看' },
+          { value: 'smelling', label: '闻' },
+          { value: 'hand_to_mouth', label: '手放在嘴边' },
+          { value: 'arm at side ', label: '手放头旁边' },
+          { value: 'arms behind head', label: '手放脑后' },
+          { value: 'arms behind back ', label: '手放后面' },
+          { value: 'hand on own chest', label: '手放在自己的胸前' },
+          { value: 'arms_crossed', label: '手交叉于胸前' },
+          { value: 'hand on hip', label: '手放臀' },
+          { value: "hand on another's hip", label: '手放臀' },
+          { value: 'hand_on_hip', label: '单手插腰' },
+          { value: 'hands_on_hips', label: '双手叉腰' },
+          { value: 'arms up', label: '举手' },
+          { value: 'hands up', label: '举手' },
+          { value: 'stretch', label: '伸懒腰' },
+          { value: 'armpits', label: '举手露腋' },
+          { value: 'leg hold', label: '手把腿抓着' },
+          { value: 'grabbing', label: '抓住' },
+          { value: 'holding', label: '拿着' },
+          { value: 'fingersmile', label: '用手指做出笑脸' },
+          { value: 'hair_pull', label: '拉头发' },
+          { value: 'hair scrunchie', label: '撮头发' },
+          { value: 'w', label: '手势' },
+          { value: 'v', label: 'v耶' },
+          { value: 'peace symbol', label: 'peace symbol耶' },
+          { value: 'thumbs_up', label: '翘大拇指' },
+          { value: 'middle_finger', label: '比出中指' },
+          { value: 'cat_pose', label: '猫爪手势' },
+          { value: 'finger_gun', label: '手枪手势' },
+          { value: 'shushing', label: '嘘手势' },
+          { value: 'waving', label: '招手' },
+          { value: 'salute', label: '敬礼' },
+          { value: 'spread_arms', label: '张手' },
+          { value: 'spread legs', label: '张开腿' },
+          { value: 'crossed_legs', label: '二郎腿' },
+          { value: 'fetal_position', label: '曲腿至胸' },
+          { value: 'leg_lift', label: '抬一只脚' },
+          { value: 'legs_up', label: '抬两只脚' },
+          { value: 'leaning forward ', label: '前倾' },
+          { value: 'fetal position', label: '婴儿姿势' },
+          { value: 'against wall', label: '靠墙' },
+          { value: 'on_stomach', label: '趴着' },
+          { value: 'squatting', label: '蹲下' },
+          { value: 'lying', label: '躺着' },
+          { value: 'sitting', label: 'sitting坐' },
+          { value: 'sitting on', label: 'sitting on坐' },
+          { value: 'seiza', label: '正坐' },
+          { value: 'wariza/w-sitting', label: '割坐' },
+          { value: 'yokozuwari', label: '侧身坐' },
+          { value: 'indian_style', label: '盘腿' },
+          { value: 'leg_hug', label: '抱腿' },
+          { value: 'walking', label: '走' },
+          { value: 'running', label: '跑' },
+          { value: 'straddle', label: 'straddle跨坐' },
+          { value: 'straddling', label: 'straddling跨坐' },
+          { value: 'kneeling', label: '下跪' },
+          { value: 'smoking', label: '抽烟' },
+          { value: 'arm_support', label: '用手支撑住' },
+          { value: 'caramelldansen', label: 'niconiconi' },
+          { value: 'princess_carry', label: '公主抱' },
+          { value: 'fighting_stance', label: '战斗姿态' },
+          { value: 'upside-down', label: '颠倒的' },
+          { value: 'top-down_bottom-up', label: '趴着翘臀' },
+          { value: 'bent_over', label: '翘臀姿势' },
+          { value: 'arched_back', label: '弓身体' },
+          { value: 'back-to-back', label: '背对背' },
+          { value: 'symmetrical_hand_pose', label: '手对手' },
+          { value: 'eye_contact', label: '眼对眼（对视）' },
+          { value: 'hug', label: '拥抱' },
+          { value: 'lap_pillow', label: '膝枕' },
+          { value: 'sleeping', label: '睡觉' },
+          { value: 'bathing', label: '洗澡' },
+          { value: 'mimikaki', label: '掏耳勺' },
+          { value: 'holding_hands', label: '牵手' },
+        ],
+      },
+      {
+        classify: '头发相关',
+        tags: [
+          { value: 'hair blowing', label: '吹头发' },
+          { value: 'adjusting hair', label: '调整头发' },
+          { value: 'hand in own hair', label: '手牵自己的头发' },
+          { value: 'holding hair', label: '握头发' },
+          { value: 'tying hair', label: '扎头发' },
+          { value: "grabbing another's hair", label: '抓别人的头发' },
+          { value: 'hands in hair', label: '手在头发' },
+          { value: 'brushing hair', label: '梳头' },
+          { value: 'washing hair', label: '洗头' },
         ],
       },
     ],
   },
 ];
-
-// bow服装饰品/头部饰品
-// hair ornament发饰
-// heart hair ornament心形
-// bandaid hair ornament创可贴
-// hair bun 发包
-// cone hair bun 锥形发髻
-// double bun双发髻
-// semi-rimless eyewear半无框的眼镜
-// sunglasses太阳镜
-// goggles风镜
-// eyepatch眼罩(独眼)
-// black blindfold黑色眼罩
-// headphones耳机
-// veil面纱
-// mouth mask口罩
-// glasses眼镜
-// earrings耳环
-// jewelry首饰
-// bell铃铛
-// ribbon_choker颈带
-// black choker 颈部饰品
-// necklace项链
-// headphones around neck耳机套脖子上
-// collar 项圈
-// sailor_collar水手领
-// neckerchief领巾
-// necktie 领带
-// cross necklace十字架
-// pendant 吊坠
-// jewelry 珠宝
-// scarf围巾
-// armband臂章
-// armlet臂环
-// arm strap 臂带
-// elbow gloves 肘部手套
-// half gloves 露指手套
-// fingerless_gloves手镯
-// gloves手套
-// fingerless gloves 五指手套
-// chains锁链
-// shackles手链
-// cuffs手铐
-// handcuffs手铐
-// bracelet手镯
-// wristwatch手表
-// wristband腕带
-// wrist_cuffs腕饰
-// holding book拿着书
-// holding sword拿着剑
-// tennis racket球拍
-// cane手杖
-// backpack双肩包
-// school bag 书包
-// satchel肩背书包
-// smartphone 手机
-// bandaid创可贴
-// ----------------------------------------------
-//   动作
-// head tilt 歪头
-// turning around回头
-// looking back回头
-// looking down向下看
-// looking up向上看
-// smelling闻
-// hand_to_mouth手放在嘴边
-// arm at side 手放头旁边
-// arms behind head手放脑后
-// arms behind back 手放后面
-// hand on own chest手放在自己的胸前
-// arms_crossed手交叉于胸前
-// hand on hip 手放臀
-// hand on another's hip 手放臀
-// hand_on_hip单手插腰
-// hands_on_hips双手叉腰
-// arms up举手
-// hands up 举手
-// stretch伸懒腰
-// armpits举手露腋
-// leg hold手把腿抓着
-// grabbing抓住
-// holding拿着
-// fingersmile用手指做出笑脸
-// hair_pull拉头发
-// hair scrunchie撮头发
-// w 手势
-// v耶
-// peace symbol 耶
-// thumbs_up翘大拇指
-// middle_finger比出中指
-// cat_pose猫爪手势
-// finger_gun手枪手势
-// shushing嘘手势
-// waving招手
-// salute敬礼
-// spread_arms张手
-// spread legs张开腿
-// crossed_legs二郎腿
-// fetal_position曲腿至胸
-// leg_lift抬一只脚
-// legs_up抬两只脚
-// leaning forward 前倾
-// fetal position婴儿姿势
-// against wall靠墙
-// on_stomach趴着
-// squatting蹲下
-// lying 躺着
-// sitting 坐
-// sitting on 坐
-// seiza正坐
-// wariza/w-sitting割坐
-// yokozuwari侧身坐
-// indian_style盘腿
-// leg_hug抱腿
-// walking走
-// running跑
-// straddle跨坐
-// straddling跨坐
-// kneeling下跪
-// smoking抽烟
-// arm_support用手支撑住
-// caramelldansenniconiconi
-// princess_carry公主抱
-// fighting_stance战斗姿态
-// upside-down颠倒的
-// top-down_bottom-up趴着翘臀
-// bent_over翘臀姿势
-// arched_back弓身体
-// back-to-back背对背
-// symmetrical_hand_pose手对手
-// eye_contact眼对眼（对视）
-// hug拥抱
-// lap_pillow膝枕
-// sleeping睡觉
-// bathing洗澡
-// mimikaki掏耳勺
-// holding_hands牵手
-// hair blowing吹头发
-// adjusting hair调整头发
-// hand in own hair手牵自己的头发
-// holding hair握头发
-// tying hair扎头发
-// grabbing another's hair抓别人的头发
-// hands in hair手在头发
-// brushing hair梳头
-// washing hair洗头
-// all_fours四肢趴地
-// symmetrical_docking2女胸部贴在一起
-// undressing脱衣服
-// skirt lift掀起裙子
-// shirt lift掀起上衣
-// adjusting_thighhigh调整过膝袜
