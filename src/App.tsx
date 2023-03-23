@@ -23,6 +23,17 @@ const tagColor = [
   'purple',
 ];
 
+const navItem = [
+  {
+    value: 'add',
+    label: '增加权重',
+  },
+  {
+    value: 'reduce',
+    label: '降低权重',
+  },
+];
+
 function App() {
   const [nav, setNav] = useState<string[]>([]);
   const [activeTag, setActiveTag] = useState<
@@ -30,17 +41,6 @@ function App() {
   >([]);
   const [activeTab, setActiveTab] = useState<string>('常用');
   const [messageApi, contextHolder] = message.useMessage();
-
-  const navItem = [
-    {
-      value: 'add',
-      label: '增加权重',
-    },
-    {
-      value: 'reduce',
-      label: '降低权重',
-    },
-  ];
 
   const navChange = useCallback(
     (checked: boolean, value: string) => {
