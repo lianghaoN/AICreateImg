@@ -36,6 +36,10 @@
 .antSwitch{
     cursor: url(https://www.wikimoe.com/content/templates/black_memory%20v1.1/images/web_cursor_link.cur),auto!important;
 }
+.createBtn{
+    margin-left: auto;
+    cursor: url(https://www.wikimoe.com/content/templates/black_memory%20v1.1/images/web_cursor_link.cur),auto!important;
+}
 .container{
     display: flex;
     align-items: center;
@@ -61,4 +65,51 @@
     height: 240px;
     border-radius: 20px;
     width: 240px;
+}
+.tabContainer{
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 0 10px 20px 10px;
+    box-shadow: 0 3px 6px -4px rgba(0,0,0,.12);
+}
+.tagItem{
+    display: flex;
+    flex-direction: column;
+}
+.partTitle{
+    font-weight: bold;
+    color: #333333;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.line{
+    background: #1677ff;
+    width: 5px;
+    height: 15px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+.tagsContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tagsItem{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: url(https://www.wikimoe.com/content/templates/black_memory%20v1.1/images/web_cursor_link.cur),auto;
+    transition: transform 0.3s ease-out;
+    margin-right: 0;
+}
+.activeTag{
+    background-color: #1677ff;
+    color: #ffffff;
+}
+.tagsItem:hover{
+    transform: translateY(-5px);
+}
+.tagCon{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
 }

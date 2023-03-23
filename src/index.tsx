@@ -4,13 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ConfigProvider } from 'antd';
+import zhCN from 'antd/locale/zh_CN';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
 );
 root.render(
   <React.StrictMode>
-    <ConfigProvider direction="rtl">
+    <ConfigProvider locale={zhCN}>
       <App />
     </ConfigProvider>
   </React.StrictMode>,
