@@ -79,7 +79,7 @@ function App() {
       if (num === 0 && type === 'reduce') {
         return messageApi.open({
           type: 'warning',
-          content: '权重已经是最小了哦',
+          content: '该tag权重已经是最小了哦',
         });
       }
       setActiveTag([
