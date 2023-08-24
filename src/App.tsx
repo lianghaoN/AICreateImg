@@ -214,6 +214,23 @@ function App() {
             }))}
           />
         </article>
+        <a href="#" className="button button--bird">
+          <div className="button__wrapper">
+            <span className="button__text">ENTRY</span>
+          </div>
+
+          <div className="birdBox">
+            <div className="bird wakeup">
+              <div className="bird__face" />
+            </div>
+            <div className="bird wakeup">
+              <div className="bird__face" />
+            </div>
+            <div className="bird">
+              <div className="bird__face" />
+            </div>
+          </div>
+        </a>
       </div>
     </div>
   );
